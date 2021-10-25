@@ -21,7 +21,7 @@ public class Calculator {
 
     public BigDecimal evaluate(String expression) {
 
-        if (!(expression.matches("[0-9+*\\/)(-]+")))
+        if (!(expression.matches("[0-9+*\\/)(-,.]+")))
             throw new NumberFormatException("Non-Arithmetic expression");
 
         fillTheList(expression, listForExpression);
